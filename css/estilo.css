@@ -1,0 +1,666 @@
+* {
+    margin: 1px;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*PALETA DE COLORES*/
+
+/*
+NEGRO: #000000
+AZUL: #14213d
+NARANJA: #fca311
+GRIS: #c6c6c6
+BLANCO: #ffffff
+*/
+
+/*FONT FAMILY*/
+
+/*
+font-family: 'Mukta', sans-serif;
+    background-image: url("../img/bg.jpg");
+font-family: 'Rubik Distressed', cursive;
+*/
+
+/*MEDIAS QUERY*/
+
+
+
+/*GENERAL*/
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    background-image: url("../img/bg.jpg");
+    color: #c6c6c6;
+
+    background-size: contain;
+
+}
+
+
+
+.imgLogo {
+    width: 250px;
+}
+
+
+.imgIndex {
+    transition: all 0.5s ease;
+}
+
+.imgIndex:hover {
+    margin-left: 2rem;
+    transform: scale(1.5);
+
+
+}
+
+main {
+    grid-area: main;
+    color: white;
+    padding: 5px;
+    border-top: #fca311 solid 4px;
+    border-bottom: #fca311 solid 4px;
+
+
+}
+
+.espaciado {
+    padding: 230px 110px 230px 110px;
+    background-image: url(../img/bgmain.jpg);
+    background-position: 100%;
+
+
+}
+
+/* HEADER */
+
+header {
+    grid-area: header;
+    background-color: black;
+    padding: 15px;
+    margin: 5px 2px 0px 2px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+        "imgLogNav navHeader";
+}
+
+.imgLogNav {
+    grid-area: imgLogNav;
+}
+
+.navOrde {
+    grid-area: navHeader;
+    list-style: none;
+}
+
+nav {
+    line-height: 35px;
+    width: 100%;
+
+    font-family: 'Rubik Distressed', cursive;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+
+.decoNav {
+    text-decoration: none;
+    color: #c6c6c6;
+    border: #c6c6c6 inset 4px;
+    padding: 5px 10px 5px 10px;
+    opacity: 0.7;
+    font-size: 1rem;
+    margin-left: 2.5rem;
+    list-style: none;
+
+}
+
+.decoNav:hover {
+    opacity: 1;
+}
+
+/*PLATILLOS*/
+
+.contenedorPlat {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content 20% 20%;
+    grid-template-areas:
+        "imgPLatillo"
+        "menuPlatillo"
+        "botPlat";
+}
+
+
+h2 {
+    font-weight: normal;
+    font-family: 'Rubik Distressed', cursive;
+    font-size: 40px;
+    color: #c6c6c6;
+
+}
+
+.imgPlatillo {
+    width: 300px;
+    height: 250px;
+    border: #fca311 double 4px;
+    grid-area: imgPLatillo;
+}
+
+.secPlat {
+
+    border: #c6c6c6 inset 6px;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    padding: 0.5rem;
+    width: min-content;
+
+}
+
+.interlPlatillo {
+    line-height: 23px;
+    padding: 4px;
+    margin: 10px;
+
+
+}
+
+.menuPlatillo {
+    width: 300px;
+    text-align: justify;
+    font-style: italic;
+    font-size: 20px;
+    padding: 5px;
+    margin: 3px;
+    grid-area: menuPlatillo;
+
+
+}
+
+.botPlat {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    padding: 5px 0px 5px 0px;
+    border: #fca311 dashed 1px;
+    grid-area: botPlat;
+
+}
+
+.inpCant {
+    font-size: 1.5rem;
+    width: 60px;
+    height: 1.5rem;
+    border-radius: 10px;
+}
+
+.labCant {
+    font-size: 1.5rem;
+}
+
+.botoneraPlat {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 0px 0px;
+}
+
+.inpPlat1 {
+    border: #c6c6c6 3px solid;
+    font-family: 'Rubik Distressed', cursive;
+    font-size: 1rem;
+    border-radius: 20px;
+    background-color: #fca311;
+    color: white;
+    width: min-content;
+    height: min-content;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    padding: 2px;
+    margin-right: 10px;
+    opacity: 0.7;
+
+}
+
+.inpPlat2 {
+    border: black 3px solid;
+    font-family: 'Rubik Distressed', cursive;
+    font-size: 1rem;
+    border-radius: 20px;
+    background-color: none;
+    color: black;
+    width: min-content;
+    height: min-content;
+    margin-bottom: 30px;
+    padding: 2px;
+    margin-left: 10px;
+    opacity: 0.7;
+}
+
+.inpPlat1:hover {
+    opacity: 1;
+}
+
+.inpPlat2:hover {
+    opacity: 1;
+}
+
+
+/*CATERING*/
+
+.grillaCat {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content min-content;
+
+    grid-template-areas:
+        "bloqImgCat"
+        "bloqTextCat"
+    ;
+}
+
+.bloqImgCat {
+    grid-area: bloqImgCat;
+}
+
+.bloqTextCat {
+    grid-area: bloqTextCat;
+}
+
+
+.imgCat {
+    display: flex;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+
+
+    border: #c6c6c6 groove 10px;
+}
+
+
+
+/*SOBRE NOSOTROS */
+
+.grillaSobNos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+
+    grid-template-areas:
+        "bloqTextSobNos"
+        "bloqVid";
+}
+
+.vidSobNos {
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 420px;
+    height: 236px;
+
+    border: #c6c6c6 groove 10px;
+
+}
+
+.bloqTextSobNos {
+    grid-area: bloqTextSobNos;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.bloqVid {
+    grid-area: bloqVid;
+
+}
+
+
+/* CONTACTO */
+
+.formConsulta {
+    padding-left: 15px;
+    display: grid;
+    grid-template-columns: 20% 20% 30% 30%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        "nombre nombre . imgCon"
+        "celular celular  . imgCon"
+        "email email .  imgCon"
+        "texto texto .  imgCon"
+        "texto texto .  imgCon"
+        "botonera botonera . imgCon";
+}
+
+.nombre {
+    grid-area: nombre;
+
+}
+
+.celular {
+    grid-area: celular;
+
+}
+
+.email {
+    grid-area: email;
+
+}
+
+.texto {
+    grid-area: texto;
+
+}
+
+.botonera {
+    grid-area: botonera;
+    display: flex;
+}
+
+.imgCon {
+    grid-area: imgCon;
+    margin-bottom: 1rem;
+    width: 500px;
+    height: 700px;
+}
+
+
+.mayuscula {
+    text-transform: uppercase;
+}
+
+.fontLegCons {
+    font-size: 1.5rem;
+    border: #c6c6c6 dotted;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+
+
+}
+
+.fontConsulta {
+    font-size: 1rem;
+    padding-left: 15px;
+    padding-top: 20px;
+
+}
+
+.fontInpConsulta {
+    font-size: 0.7rem;
+    width: 150px;
+    height: 1.5rem;
+
+}
+
+.textConsulta {
+    margin-left: 15px;
+    width: 300px;
+    font-size: 0.7rem;
+    border: #c6c6c6 solid 6px;
+    display: flex;
+}
+
+
+.inpCon1 {
+    border: #c6c6c6 3px solid;
+    font-family: 'Rubik Distressed', cursive;
+    font-size: 0.7rem;
+    margin-top: 2rem;
+    color: black;
+    width: 150px;
+    height: 25px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    padding: 2px;
+    margin-right: 10px;
+    border-radius: 20px;
+    opacity: 0.7;
+
+}
+
+.inpCon2 {
+    border: #c6c6c6 3px solid;
+    font-family: 'Rubik Distressed', cursive;
+    font-size: 0.7rem;
+    margin-top: 2rem;
+    color: black;
+    width: 150px;
+    height: 25px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    padding: 2px;
+    margin-right: 30px;
+    border-radius: 20px;
+    opacity: 0.7;
+
+}
+
+.inpCon1:hover {
+    opacity: 1;
+}
+
+.inpCon2:hover {
+    opacity: 1;
+}
+
+/* FOOTER */
+
+
+
+footer {
+    grid-area: footer;
+    padding: 10px;
+    background-color: #000000;
+}
+
+.grillaFoot {
+    display: grid;
+    grid-template-columns: 22.6% 77.4%;
+    grid-template-rows: 0.9fr 0.9fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "bloque1 bloque3"
+        "bloque2 bloque3";
+}
+
+.bloque1 {
+    grid-area: bloque1;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.bloque2 {
+    grid-area: bloque2;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.bloque3 {
+    grid-area: bloque3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.logRedesWh {
+    color: #00bb2d;
+
+    padding: 5px 0px 5px 5px;
+    margin: 1px;
+    font-size: 25px;
+    transition: all 0.5s ease;
+
+}
+
+.logRedesIg {
+    color: #C13584;
+
+    padding: 5px 0px 5px 5px;
+    margin: 1px;
+    font-size: 25px;
+    transition: all 0.5s ease;
+
+}
+
+.logRedesWh:hover {
+    transform: scale(1.5);
+
+}
+
+.logRedesIg:hover {
+    transform: scale(1.5);
+
+}
+
+.datRedes {
+    display: flex;
+
+    font-size: 1.2rem;
+    padding-left: 1px;
+    margin: 3px;
+}
+
+
+
+.navFoot {
+
+    grid-area: navFoot;
+    list-style: none;
+
+}
+
+.decoNavFoot {
+    text-decoration: none;
+    color: #c6c6c6;
+    font-family: 'Rubik Distressed', cursive;
+    padding: 5px 10px 5px 10px;
+    opacity: 0.7;
+    font-size: 1rem;
+
+}
+
+.decoNavFoot:hover {
+    opacity: 1;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .navOrde {
+        display: flex;
+    }
+
+    .navFoot {
+        display: flex;
+    }
+
+    .bloqVid {
+        display: flex;
+        justify-content: center;
+    }
+
+    .vidSobNos {
+        width: 840px;
+        height: 472px;
+    }
+
+    .secPlat {
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+    }
+
+    .interlPlatillo {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .inpPlat1 {
+        width: 300px;
+        height: 100px;
+        font-size: 1.5rem;
+        margin-right: 30px;
+    }
+
+    .inpPlat2 {
+        width: 300px;
+        height: 100px;
+        font-size: 1.5rem;
+        margin-left: 30px;
+    }
+
+    .imgCat {
+        width: 1200px;
+        height: 500px;
+
+    }
+
+    .bloqImgCat {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fontConsulta {
+        font-size: 2rem;
+
+
+    }
+
+    .fontInpConsulta {
+        font-size: 1.5rem;
+        width: 400px;
+        height: 2rem;
+
+    }
+
+    .textConsulta {
+        font-size: 1.5rem;
+        width: 1000px;
+    }
+
+    .inpCon1 {
+
+        font-size: 1.5rem;
+        width: 250px;
+        height: 50px;
+        margin-right: 30px;
+
+    }
+
+    .inpCon2 {
+
+        font-size: 1.5rem;
+        width: 250px;
+        height: 50px;
+        margin-left: 25px;
+
+
+    }
+
+}

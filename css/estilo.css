@@ -108,7 +108,7 @@ header {
     grid-area: imgLogNav;
 }
 
-.navOrde {
+.navegador {
     grid-area: navHeader;
     list-style: none;
 }
@@ -126,7 +126,7 @@ nav {
 
 
 
-.decoNav {
+.navegador__item {
     text-decoration: none;
     color: #c6c6c6;
     border: #c6c6c6 inset 4px;
@@ -138,7 +138,7 @@ nav {
 
 }
 
-.decoNav:hover {
+.navegador__item:hover {
     opacity: 1;
 }
 
@@ -147,10 +147,10 @@ nav {
 .contenedorPlat {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: min-content 20% 20%;
+    grid-template-rows: min-content 25% min-content;
     grid-template-areas:
         "imgPLatillo"
-        "menuPlatillo"
+        "descPlatillo"
         "botPlat";
 }
 
@@ -163,7 +163,7 @@ h2 {
 
 }
 
-.imgPlatillo {
+.secPlat__item__img {
     width: 300px;
     height: 250px;
     border: #fca311 double 4px;
@@ -187,37 +187,57 @@ h2 {
 
 }
 
-.menuPlatillo {
+.secPlat__item__desc {
     width: 300px;
     text-align: justify;
     font-style: italic;
     font-size: 20px;
     padding: 5px;
     margin: 3px;
-    grid-area: menuPlatillo;
+    grid-area: descPlatillo;
 
 
 }
 
 .botPlat {
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     margin-bottom: 40px;
-    padding: 5px 0px 5px 0px;
+    padding: 7px 0px 7px 0px;
     border: #fca311 dashed 1px;
     grid-area: botPlat;
 
 }
 
-.inpCant {
+.secPlat__item__btnCan {
     font-size: 1.5rem;
     width: 60px;
     height: 1.5rem;
+    margin-top: 7px;
+    margin-right: 10px;
     border-radius: 10px;
 }
 
-.labCant {
+.secPlat__item__btnAdd{
+    border: #c6c6c6 3px solid;
+    font-family: 'Rubik Distressed', cursive;
     font-size: 1.5rem;
+    border-radius: 80%;
+    background-color: #fca311;
+    color: white;
+    width: min-content;
+    height: min-content;
+    padding: 0px 4px 0px 4px;
+    opacity: 0.7;
+}
+
+.secPlat__item__btnAdd:hover{
+    opacity: 1;
+}
+
+.lblCant {
+    font-size: 1.5rem;
+    margin-right: 10px;
 }
 
 .botoneraPlat {
@@ -476,6 +496,7 @@ footer {
 }
 
 .grillaFoot {
+    
     display: grid;
     grid-template-columns: 22.6% 77.4%;
     grid-template-rows: 0.9fr 0.9fr;
@@ -555,7 +576,7 @@ footer {
 
 }
 
-.decoNavFoot {
+.navFoot__item {
     text-decoration: none;
     color: #c6c6c6;
     font-family: 'Rubik Distressed', cursive;
@@ -565,14 +586,14 @@ footer {
 
 }
 
-.decoNavFoot:hover {
+.navFoot__item:hover {
     opacity: 1;
 }
 
 
 @media screen and (min-width: 1024px) {
 
-    .navOrde {
+    .navegador {
         display: flex;
     }
 
@@ -596,7 +617,7 @@ footer {
         width: 99%;
     }
 
-    .interlPlatillo {
+    .secPlat__item {
         display: flex;
         justify-content: space-around;
     }

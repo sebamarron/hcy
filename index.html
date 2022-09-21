@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Rubik+Distressed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/estilo.css">
@@ -16,23 +18,46 @@
 
 <body>
     <div class="grilla">
-        <header>
+        <header class="container-fluid">
 
-            <a class="imgLogNav animate__animated animate__jackInTheBox" href="#"><img x src="./img/logo.png" alt="logo"
-                    width="100px"></a>
+            <nav class="navbar navbar-dark  navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="imgLogNav animate__animated animate__jackInTheBox" href="#"><img x src="./img/logo.png"
+                            alt="logo" width="100px"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Hoy Cocino Yo</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item"><a class="navegador__item active" href="#">INICIO</a></li>
+                                <li class="nav-item"><a class="navegador__item"
+                                        href="./pages/platillos.html">PLATILLOS</a></li>
+                                <li class="nav-item"><a class="navegador__item"
+                                        href="./pages/catering.html">CATERING</a></li>
+                                <li class="nav-item"><a class="navegador__item" href="./pages/sobre_nosotros.html">SOBRE
+                                        NOSOTROS</a></li>
+                                <li class="nav-item"><a class="navegador__item"
+                                        href="./pages/contacto.html">CONTACTO</a></li>
 
-            <a class="imgLogNav animate__animated animate__jackInTheBox" href="#"><img x src="./img/logo.png" alt="logo" width="100px"></a>
-
-
-            <nav>
-                <ul class="navegador animate__animated animate__backInRight">
-                    <li><a class="navegador__item" href="#">INICIO</a></li>
-                    <li><a class="navegador__item" href="./pages/platillos.html">PLATILLOS</a></li>
-                    <li><a class="navegador__item" href="./pages/catering.html">CATERING</a></li>
-                    <li><a class="navegador__item" href="./pages/sobre_nosotros.html">SOBRE NOSOTROS</a></li>
-                    <li><a class="navegador__item" href="./pages/contacto.html">CONTACTO</a></li>
-                </ul>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2 inpSearch" type="search" placeholder="..." aria-label="Buscar">
+                                <button class="btn btn-success bgSearch" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </nav>
+
 
         </header>
 
@@ -40,7 +65,7 @@
         <main class="espaciado">
             <a href="./pages/platillos.html"><img class="imgIndex" src="./img/carritof.png" width="300px"
                     alt="carrito de compra"></a>
-                <p>PROBANDO</p>
+
         </main>
 
 
@@ -75,7 +100,9 @@
 
         </footer>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
     <script src="https://kit.fontawesome.com/f0d520556d.js" crossorigin="anonymous"></script>
 
 </body>

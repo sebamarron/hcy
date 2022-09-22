@@ -57,11 +57,6 @@ body {
 
 
 
-.imgLogo {
-    width: 250px;
-}
-
-
 .imgIndex {
     transition: all 0.5s ease;
 }
@@ -123,7 +118,10 @@ nav {
 
 .navegador__item:hover {
     opacity: 1;
+    color: #c6c6c6;
 }
+
+
 
 .bgSearch {
     background-color: #fca311;
@@ -372,6 +370,8 @@ h2 {
 }
 
 
+
+
 .inpCon1 {
     border: #c6c6c6 3px solid;
     font-family: 'Rubik Distressed', cursive;
@@ -481,11 +481,13 @@ footer {
 
 .logRedesWh:hover {
     transform: scale(1.5);
+    color: #00bb2d;
 
 }
 
 .logRedesIg:hover {
     transform: scale(1.5);
+    color: #C13584;
 
 }
 
@@ -518,6 +520,7 @@ footer {
 
 .navFoot__item:hover {
     opacity: 1;
+    color: #c6c6c6;
 }
 
 

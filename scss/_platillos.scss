@@ -1,0 +1,150 @@
+.contenedorPlat {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content 25% min-content;
+    grid-template-areas:
+        "imgPLatillo"
+        "descPlatillo"
+        "botPlat";
+}
+
+
+h2 {
+    font-weight: normal;
+    font-family: $font_titulos;
+    font-size: 40px;
+    color: $gris;
+
+}
+
+.secPlat__item__img {
+    width: 300px;
+    height: 250px;
+    border: $naranja double 4px;
+    grid-area: imgPLatillo;
+}
+
+.secPlat {
+
+    border: $gris inset 6px;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    padding: 0.5rem;
+    width: min-content;
+
+}
+
+.interlPlatillo {
+    line-height: 23px;
+    padding: 4px;
+    margin: 10px;
+
+
+}
+
+.secPlat__item__desc {
+    width: 300px;
+    text-align: justify;
+    font-style: italic;
+    font-size: 20px;
+    padding: 5px;
+    margin: 3px;
+    grid-area: descPlatillo;
+
+
+}
+
+.botPlat {
+    display: grid;
+    grid-template-columns: min-content min-content min-content  ;
+    grid-template-rows: min-content min-content;
+    gap: 0px 0px;
+    grid-template-areas:
+        "lblCant lblCant can"
+        "btnAgr btnAgr btnAgr";
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 7px 0px 7px 0px;
+    border: $naranja dashed 1px;
+    grid-area: botPlat;
+
+}
+
+.secPlat__item__btnCan {
+    grid-area: can;
+    font-size: 1.5rem;
+    width: 60px;
+    height: 1.5rem;
+    margin-top: 7px;
+    margin-right: 10px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.secPlat__item__btnAdd {
+    grid-area: btnAgr;
+    width: 100%;
+    border: $gris 3px solid;
+    font-family: $font_titulos;
+    font-size: 1.5rem;
+    background-color: $naranja;
+    color: white;
+    
+    height: min-content;
+    padding: 0px 4px 0px 4px;
+    opacity: 0.7;
+}
+
+.secPlat__item__btnAdd:hover {
+    opacity: 1;
+}
+
+.lblCant {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.botoneraPlat {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 0px 0px;
+}
+
+.inpPlat1 {
+    border: $gris 3px solid;
+    font-family: $font_titulos;
+    font-size: 1rem;
+    border-radius: 20px;
+    background-color: $naranja;
+    color: white;
+    width: min-content;
+    height: min-content;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    padding: 2px;
+    margin-right: 10px;
+    opacity: 0.7;
+
+}
+
+.inpPlat2 {
+    border: $negro 3px solid;
+    font-family: $font_titulos;
+    font-size: 1rem;
+    border-radius: 20px;
+    background-color: none;
+    color: $negro;
+    width: min-content;
+    height: min-content;
+    margin-bottom: 30px;
+    padding: 2px;
+    margin-left: 10px;
+    opacity: 0.7;
+}
+
+.inpPlat1:hover {
+    opacity: 1;
+}
+
+.inpPlat2:hover {
+    opacity: 1;
+}

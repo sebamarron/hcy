@@ -1,0 +1,30 @@
+.grillaCat {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content min-content;
+
+    grid-template-areas:
+        "bloqImgCat"
+        "bloqTextCat"
+    ;
+}
+
+.bloqImgCat {
+    grid-area: bloqImgCat;
+}
+
+.bloqTextCat {
+    grid-area: bloqTextCat;
+}
+
+
+.imgCat {
+    display: flex;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+
+
+    border: $gris groove 10px;
+}

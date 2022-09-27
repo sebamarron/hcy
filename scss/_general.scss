@@ -1,0 +1,146 @@
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: $font_general;
+    background-image: url("../img/bg.jpg");
+    color: $gris;
+
+    background-size: contain;
+
+}
+
+
+
+.imgIndex {
+    transition: all 0.5s ease;
+}
+
+.imgIndex:hover {
+    margin-left: 2rem;
+    transform: scale(1.5);
+
+
+}
+
+main {
+    grid-area: main;
+    color: $blanco;
+    padding: 5px;
+    border-top: $naranja solid 4px;
+    border-bottom: $naranja solid 4px;
+
+
+}
+
+.espaciado {
+    padding: 230px 110px 230px 110px;
+    background-image: url(../img/bgmain.jpg);
+    background-position: 100%;
+
+
+}
+
+/* HEADER */
+
+header {
+    grid-area: header;
+    background-color: $negro;
+    padding: 15px;
+    margin: 5px 2px 0px 2px;
+    height: 10rem;
+    
+    nav {
+        line-height: 35px;
+        font-family: $font_titulos;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .navegador__item {
+        text-decoration: none;
+        color: $gris;
+        border: $gris inset 4px;
+        padding: 5px 10px 5px 10px;
+        opacity: 0.7;
+        font-size: 1rem;
+        margin-left: 2.5rem;
+        list-style: none;
+        &:hover {
+            opacity: 1;
+            color: $gris;
+        }
+    }
+    
+    .bgSearch {
+        background-color: $naranja;
+        border: $gris solid 1px;
+        color: $negro;
+        font-family: $font_general;
+        opacity: 0.7;
+        &:hover{
+            background-color: $blanco;
+            opacity: 1;
+        }
+    
+    }
+}
+
+/*FOOTER*/
+
+footer {
+    grid-area: footer;
+    padding: 10px;
+    background-color: $negro;
+}
+
+
+.zoom{
+    transition: all 0.5s ease;
+    &:hover{transform: scale(1.5);
+    }
+}
+
+
+
+
+
+
+.navFoot {
+    display:block;
+    justify-content:flex-end;
+    align-items:center;
+    grid-area: navFoot;
+    list-style: none;
+
+}
+
+.navFoot__item {
+    text-decoration: none;
+    color: $gris;
+    font-family: $font_titulos;
+    padding: 5px 10px 5px 10px;
+    opacity: 0.7;
+    font-size: 1rem;
+    &:hover {
+    opacity: 1;
+    color: $gris;
+}
+}
+
+
+

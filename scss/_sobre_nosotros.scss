@@ -1,0 +1,31 @@
+.grillaSobNos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+
+    grid-template-areas:
+        "bloqTextSobNos"
+        "bloqVid";
+}
+
+.vidSobNos {
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 420px;
+    height: 236px;
+
+    border: $gris groove 10px;
+
+}
+
+.bloqTextSobNos {
+    grid-area: bloqTextSobNos;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.bloqVid {
+    grid-area: bloqVid;
+
+}

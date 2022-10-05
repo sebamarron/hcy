@@ -1,3 +1,19 @@
+@mixin btn_cont ($bgc){
+    border: $gris 3px solid;
+    font-family: $font_titulos;
+    font-size: 0.7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: $negro;
+    width: 150px;
+    height: 25px;
+    margin-left: 15px;
+    padding: 2px;
+    margin-right: 10px;
+    opacity: 0.7;
+    background-color: $bgc;
+}
+
 .consulta__titulo {
     
     font-family: $font_general;
@@ -13,35 +29,13 @@
 
 
 .inpCon1 {
-    border: $gris 3px solid;
-    font-family: $font_titulos;
-    font-size: 0.7rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: $negro;
-    width: 150px;
-    height: 25px;
-    margin-left: 15px;
-    padding: 2px;
-    margin-right: 10px;
-    opacity: 0.7;
-    background-color: $naranja;
+    @include btn_cont ($naranja);
+    
 
 }
 
 .inpCon2 {
-    border: $gris 3px solid;
-    font-family: $font_titulos;
-    font-size: 0.7rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: $negro;
-    width: 150px;
-    height: 25px;
-    margin-left: 15px;
-    padding: 2px;
-    margin-right: 10px;
-    opacity: 0.7;
+    @include btn_cont ($gris);
 
 }
 

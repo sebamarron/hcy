@@ -14,36 +14,42 @@
     background-color: $bgc;
 }
 
-.consulta__titulo {
-    
-    font-family: $font_general;
-    font-size: 2.5rem;
-    
-}
-
-
 .txtCon{
     font-family: $font_general;
 }
 
-
-
 .inpCon1 {
     @include btn_cont ($naranja);
+    &:hover {
+        opacity: 1;
+    }
     
 
 }
 
 .inpCon2 {
     @include btn_cont ($gris);
+    &:hover {
+        opacity: 1;
+    }
+    
 
 }
 
-.inpCon1:hover {
-    opacity: 1;
-}
 
-.inpCon2:hover {
-    opacity: 1;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

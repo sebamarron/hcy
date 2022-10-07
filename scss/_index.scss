@@ -1,0 +1,8 @@
+.imgIndex {
+    transition: all 0.5s ease;
+
+    &:hover {
+        margin-left: 2rem;
+        transform: scale(1.5);
+    }
+}

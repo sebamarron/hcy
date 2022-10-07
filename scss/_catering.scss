@@ -7,24 +7,22 @@
         "bloqImgCat"
         "bloqTextCat"
     ;
-}
+
 
 .bloqImgCat {
     grid-area: bloqImgCat;
+    .imgCat {
+        display: flex;
+    
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+    
+    
+        border: $gris groove 10px;
+    }
 }
-
 .bloqTextCat {
     grid-area: bloqTextCat;
 }
-
-
-.imgCat {
-    display: flex;
-
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 100%;
-
-
-    border: $gris groove 10px;
 }

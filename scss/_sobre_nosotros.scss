@@ -6,26 +6,27 @@
     grid-template-areas:
         "bloqTextSobNos"
         "bloqVid";
-}
 
-.vidSobNos {
+    .bloqTextSobNos {
+        grid-area: bloqTextSobNos;
+        font-size: 2rem;
+        text-align: center;
+    }
 
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 420px;
-    height: 236px;
+    .bloqVid {
+        grid-area: bloqVid;
 
-    border: $gris groove 10px;
+        .vidSobNos {
 
-}
+            margin-top: 15px;
+            margin-bottom: 15px;
+            width: 420px;
+            height: 236px;
 
-.bloqTextSobNos {
-    grid-area: bloqTextSobNos;
-    font-size: 2rem;
-    text-align: center;
-}
+            border: $gris groove 10px;
 
-.bloqVid {
-    grid-area: bloqVid;
+        }
+
+    }
 
 }
